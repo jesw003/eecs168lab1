@@ -1,0 +1,120 @@
+[09:33:30.58] /o Custom Designer (TM) Version J-2014.12-SP2-2
+              /c Build  (OPT) Config 2901729 compiled on Sun Jul 26 20:41:43 2015 for RHEL64 5.7
+              /c Invocation: /usr/local/synopsys/customdesigner/J-2014.12-SP2-2/amd64/platform/bin/cdesigner
+              /c Execution time: Wed Jan 16 09:33:26 2019
+              /c Host: bender.engr.ucr.edu
+              /c 
+              /c Copyright © 2004-2015 Synopsys, Inc. All rights reserved.
+              /c Your use of this program is subject to the terms and conditions of the written license agreement between you, or your company, and Synopsys.
+              /c 
+[09:33:33.21] /i db::setAttr geometry -of [gi::getFrames 0] -value 600x300+8+514
+[09:33:41.23] /# gi::executeAction deRecentFile_mylibrary_inverter_testbench_schematic_Editing -in [gi::getWindows 0]
+[09:33:41.24] /a de::open mylibrary/inverter_testbench/schematic -readOnly false
+[09:33:41.34] /o 	############################################
+[09:33:41.34] /o 	--------------------------------------------
+[09:33:41.34] /o 	PDK Name................... : SAED_PDK_90
+[09:33:41.34] /o 	PDK Release Date........... : 29-Sep-2015
+[09:33:41.34] /o 	PDK Custom Designer Version : J-2014.12-2
+[09:33:41.34] /o 	--------------------------------------------
+[09:33:41.34] /o 	############################################
+[09:33:41.34] /o 
+[09:33:41.34] /w Warning: Preference 'leActiveLPP' is deprecated and scheduled for removal in a future release with no replacement. For migration assistance, see the Custom Designer Tcl Reference Manual. (PREFERENCE-058)
+[09:33:41.38] /o SAED PDK 90: Loaded callbacks
+[09:33:41.38] /o SAED PDK 90: Loaded display resources
+[09:33:41.45] /m Information: License 'Schematic Editor' checked out. (LICENSE-003)
+[09:33:41.57] /r giWindowId 1
+[09:33:41.58] /r giWindowGeometry 1305x777
+[09:33:42.28] /o oa:0x25f44180
+[09:33:43.36] /i db::setAttr geometry -of [gi::getFrames 1] -value 1305x777+15+54
+[09:33:49.36] /# gi::executeAction seShowConsoleForWindow -in [gi::getWindows 1]
+[09:33:49.36] /i sa::showConsole -context [db::getNext [de::getContexts -window 1]]
+[09:33:51.29] /m Information: License 'Simulation & Analysis Environment' checked out. (LICENSE-003)
+[09:33:51.32] /r giWindowId 2
+[09:33:51.33] /r giWindowGeometry 600x500
+[09:33:51.84] /o oa:0x291e7f00
+[09:33:52.23] /i db::setAttr geometry -of [gi::getFrames 2] -value 600x500+86+109
+[09:33:56.14] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[09:33:56.14] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 2]]
+[09:33:57.33] /# gi::executeAction saLoadState -in [gi::getWindows 2]
+[09:33:57.33] /i sa::showLoadState -parent 2
+[09:33:57.51] /o oa:0x29123780
+[09:33:57.76] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]]
+[09:33:58.29] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]] -value 600x645+206+209
+[09:34:03.82] /i gi::setField {/loadFrom/openAccess} -value {true} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]]
+[09:34:04.35] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]] -value 600x616+206+209
+[09:34:05.82] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]]
+[09:34:28.86] /i gi::setActiveWindow 0
+[09:34:28.87] /i gi::setActiveWindow 0 -raise true
+[09:34:31.09] /i gi::setActiveWindow 2
+[09:34:31.09] /i gi::setActiveWindow 2 -raise true
+[09:34:33.34] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[09:34:33.35] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 2]]
+[09:34:41.62] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[09:34:41.63] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 2]]
+[09:34:42.52] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 2]
+[09:34:42.52] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 2]
+[09:34:42.61] /m Information: "Starting incremental netlisting for design "mylibrary/inverter_testbench/schematic"..." (NETLISTING-010)
+[09:34:42.64] /o No Design Integrity rule violations found in "mylibrary/inverter_testbench/schematic"
+[09:34:43.39] /m Information: "Netlisting design "mylibrary/inverter_testbench/schematic" finished successfully." (NETLISTING-012)
+[09:34:43.39] /m Information: "Composing simulator input file for design "mylibrary/inverter_testbench/schematic"..."
+[09:34:43.47] /m Information: "Simulator input file composed successfully for design "mylibrary/inverter_testbench/schematic""
+[09:34:43.97] /r giWindowId 3
+[09:34:43.97] /r giWindowGeometry 800x600
+[09:34:44.23] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 3]
+[09:34:44.23] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 3]
+[09:34:44.30] /m Information: "Starting HSPICE simulation for design: mylibrary/inverter_testbench/schematic"
+[09:34:44.31] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 3]
+[09:34:44.37] /o 1
+[09:34:44.37] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 3]
+[09:34:44.55] /i db::setAttr geometry -of [gi::getFrames 3] -value 800x600+112+135
+[09:34:45.25] /m Information: "Simulation completed successfully for design: mylibrary/inverter_testbench/schematic "
+[09:34:45.50] /m Information: Measurement calculations completed for testbench: default in 0s
+[09:34:45.58] /m Information: "Evaluating and plotting outputs..."
+[09:34:45.62] /m Information: Launching Waveform Viewer "cd /home/eemaj/jsiow/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/eemaj/jsiow/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
+[09:47:01.17] /m Information: Waveform Viewer exited normally.
+[09:47:05.94] /i gi::setActiveWindow 2
+[09:47:05.94] /i gi::setActiveWindow 2 -raise true
+[09:47:07.90] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[09:47:07.91] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 2]]
+[09:47:11.35] /# gi::executeAction saLoadState -in [gi::getWindows 2]
+[09:47:11.35] /i sa::showLoadState -parent 2
+[09:47:11.55] /o oa:0x29a47df0
+[09:47:11.82] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]]
+[09:47:12.20] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]] -value 600x616+206+209
+[09:47:14.47] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]]
+[09:47:20.00] /i gi::setActiveWindow 3
+[09:47:20.00] /i gi::setActiveWindow 3 -raise true
+[09:47:24.61] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[09:47:24.66] /i gi::setActiveWindow 2
+[09:47:24.67] /i gi::setActiveWindow 2 -raise true
+[09:47:26.43] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[09:47:26.43] /r giMenuAccess db::getNext [gi::getMenus saConsoleSessionMenu -from [gi::getWindows 2]]
+[09:47:30.32] /# gi::executeAction saLoadState -in [gi::getWindows 2]
+[09:47:30.32] /i sa::showLoadState -parent 2
+[09:47:30.50] /o oa:0x29a2d6c0
+[09:47:30.76] /i gi::setActiveDialog [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]]
+[09:47:31.22] /i db::setAttr geometry -of [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]] -value 600x616+206+209
+[09:47:33.38] /i gi::pressButton {/ok} -in [gi::getDialogs {saShowLoadState} -parent [gi::getWindows 2]]
+[09:47:35.03] /i gi::executeAction menuPreShow -in [gi::getWindows 2]
+[09:47:35.04] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 2]]
+[09:47:36.10] /# gi::executeAction saNetlistAndRun -in [gi::getWindows 2]
+[09:47:36.10] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 2]
+[09:47:36.16] /m Information: "Starting incremental netlisting for design "mylibrary/inverter_testbench/schematic"..." (NETLISTING-010)
+[09:47:36.19] /o No Design Integrity rule violations found in "mylibrary/inverter_testbench/schematic"
+[09:47:36.28] /m Information: "Netlisting design "mylibrary/inverter_testbench/schematic" finished successfully." (NETLISTING-012)
+[09:47:36.29] /m Information: "Composing simulator input file for design "mylibrary/inverter_testbench/schematic"..."
+[09:47:36.37] /m Information: "Simulator input file composed successfully for design "mylibrary/inverter_testbench/schematic""
+[09:47:36.80] /r giWindowId 4
+[09:47:36.81] /r giWindowGeometry 800x600
+[09:47:37.04] /# gi::expand {jobMonitorTable} -index {0,0} -in [gi::getWindows 4]
+[09:47:37.04] /# gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 4]
+[09:47:37.09] /m Information: "Starting HSPICE simulation for design: mylibrary/inverter_testbench/schematic"
+[09:47:37.10] /# gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 4]
+[09:47:37.12] /o 1
+[09:47:37.12] /i gi::expand {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 4]
+[09:47:37.36] /i db::setAttr geometry -of [gi::getFrames 4] -value 800x600+164+187
+[09:47:37.56] /m Information: "Simulation completed successfully for design: mylibrary/inverter_testbench/schematic "
+[09:47:37.79] /m Information: Measurement calculations completed for testbench: default in 0s
+[09:47:37.80] /m Information: "Evaluating and plotting outputs..."
+[09:47:37.84] /m Information: Launching Waveform Viewer "cd /home/eemaj/jsiow/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results && wv -k -cdesigner > /home/eemaj/jsiow/simulation/mylibrary/inverter_testbench/schematic/HSPICE/nominal/results/viewer.log 2>&1"
+[09:55:08.36] /m Information: Waveform Viewer exited normally.

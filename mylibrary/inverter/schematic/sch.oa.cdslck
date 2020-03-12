@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      jsiow
+HostName                       bender.engr.ucr.edu
+ProcessIdentifier              6802
+ProcessCreationTime_UTC        1547665493
+ProcessCreationTime_Readable   Wed 16 Jan 2019 11:04:53 AM PST PST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/eemaj/jsiow/eecs168/mylibrary/inverter/schematic/sch.oa.cdslck
+TimeEditLocked                 Wed 16 Jan 2019 11:25:39 AM PST PST
